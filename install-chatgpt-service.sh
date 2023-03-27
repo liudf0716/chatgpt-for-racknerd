@@ -60,7 +60,7 @@ sudo apt-get install -y supervisor
 # Configure Shadowsocks-libev to run under supervisord
 cat <<EOF > /tmp/shadowsocks-libev.conf
 [program:shadowsocks-libev]
-command=/usr/local/bin/ss-server -c /etc/shadowsocks-libev/config.json
+command=ss-server -c /etc/shadowsocks-libev/config.json
 user=root
 autostart=true
 autorestart=true
